@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F0DC6A5B-D01F-4FF0-972B-42FCCEF375B6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>InterfaceDeJeu</RootNamespace>
+    <AssemblyName>InterfaceDeJeu</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="View\CurrentPlayerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\CurrentPlayerControl.Designer.cs">
+      <DependentUpon>CurrentPlayerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MainView.Designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\CurrentPlayerControl.resx">
+      <DependentUpon>CurrentPlayerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MainView.resx">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CarteLibrairie\LibrairieDeClasse.csproj">
+      <Project>{8bbfef5c-43eb-48bf-953c-7ccf07150556}</Project>
+      <Name>LibrairieDeClasse</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\10-Carreau.jpg" />
+    <EmbeddedResource Include="Resources\10-Coeur.jpg" />
+    <EmbeddedResource Include="Resources\10-Pique.jpg" />
+    <EmbeddedResource Include="Resources\10-Trefle.jpg" />
+    <EmbeddedResource Include="Resources\2-Carreau.jpg" />
+    <EmbeddedResource Include="Resources\2-Coeur.jpg" />
+    <EmbeddedResource Include="Resources\2-Pique.jpg" />
+    <EmbeddedResource Include="Resources\2-Trefle.jpg" />
+    <EmbeddedResource Include="Resources\3-Carreau.jpg" />
+    <EmbeddedResource Include="Resources\3-Coeur.jpg" />
+    <EmbeddedResource Include="Resources\3-Pique.jpg" />
+    <EmbeddedResource Include="Resources\3-Trefle.jpg" />
+    <EmbeddedResource Include="Resources\4-Carreau.jpg" />
+    <EmbeddedResource Include="Resources\4-Coeur.jpg" />
+    <EmbeddedResource Include="Resources\4-Pique.jpg" />
+    <EmbeddedResource Include="Resources\4-Trefle.jpg" />
+    <EmbeddedResource Include="Resources\5-Carreau.jpg" />
+    <EmbeddedResource Include="Resources\5-Coeur.jpg" />
+    <EmbeddedResource Include="Resources\5-Pique.jpg" />
+    <EmbeddedResource Include="Resources\5-Trefle.jpg" />
+    <EmbeddedResource Include="Resources\6-Carreau.jpg" />
+    <EmbeddedResource Include="Resources\6-Coeur.jpg" />
+    <EmbeddedResource Include="Resources\6-Pique.jpg" />
+    <EmbeddedResource Include="Resources\6-Trefle.jpg" />
+    <EmbeddedResource Include="Resources\7-Carreau.jpg" />
+    <EmbeddedResource Include="Resources\7-Coeur.jpg" />
+    <EmbeddedResource Include="Resources\7-Pique.jpg" />
+    <EmbeddedResource Include="Resources\7-Trefle.jpg" />
+    <EmbeddedResource Include="Resources\8-Carreau.jpg" />
+    <EmbeddedResource Include="Resources\8-Coeur.jpg" />
+    <EmbeddedResource Include="Resources\8-Pique.jpg" />
+    <EmbeddedResource Include="Resources\8-Trefle.jpg" />
+    <EmbeddedResource Include="Resources\9-Carreau.jpg" />
+    <EmbeddedResource Include="Resources\9-Coeur.jpg" />
+    <EmbeddedResource Include="Resources\9-Pique.jpg" />
+    <EmbeddedResource Include="Resources\9-Trefle.jpg" />
+    <EmbeddedResource Include="Resources\AS-Carreau.jpg" />
+    <EmbeddedResource Include="Resources\AS-Coeur.jpg" />
+    <EmbeddedResource Include="Resources\AS-Pique.jpg" />
+    <EmbeddedResource Include="Resources\AS-Trefle.jpg" />
+    <Content Include="Resources\as.png" />
+    <EmbeddedResource Include="Resources\DAME-Carreau.jpg" />
+    <EmbeddedResource Include="Resources\DAME-Coeur.jpg" />
+    <EmbeddedResource Include="Resources\DAME-Pique.jpg" />
+    <EmbeddedResource Include="Resources\DAME-Trefle.jpg" />
+    <EmbeddedResource Include="Resources\Joker1.jpg" />
+    <EmbeddedResource Include="Resources\joker2.jpg" />
+    <EmbeddedResource Include="Resources\ROI-Carreau.jpg" />
+    <EmbeddedResource Include="Resources\ROI-Coeur.jpg" />
+    <EmbeddedResource Include="Resources\ROI-Pique.jpg" />
+    <EmbeddedResource Include="Resources\ROI-Trefle.jpg" />
+    <EmbeddedResource Include="Resources\VALET-Carreau.jpg" />
+    <EmbeddedResource Include="Resources\VALET-Coeur.jpg" />
+    <EmbeddedResource Include="Resources\VALET-Pique.jpg" />
+    <EmbeddedResource Include="Resources\VALET-Trefle.jpg" />
+    <Content Include="Resources\Wednesday.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="View\Images\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
