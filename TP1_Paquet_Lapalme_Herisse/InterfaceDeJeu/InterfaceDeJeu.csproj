@@ -134,13 +134,12 @@
     <EmbeddedResource Include="Resources\AS-Coeur.jpg" />
     <EmbeddedResource Include="Resources\AS-Pique.jpg" />
     <EmbeddedResource Include="Resources\AS-Trefle.jpg" />
-    <Content Include="Resources\as.png" />
     <EmbeddedResource Include="Resources\DAME-Carreau.jpg" />
     <EmbeddedResource Include="Resources\DAME-Coeur.jpg" />
     <EmbeddedResource Include="Resources\DAME-Pique.jpg" />
     <EmbeddedResource Include="Resources\DAME-Trefle.jpg" />
-    <EmbeddedResource Include="Resources\Joker1.jpg" />
-    <EmbeddedResource Include="Resources\joker2.jpg" />
+    <EmbeddedResource Include="Resources\Joker-Rouge.jpg" />
+    <EmbeddedResource Include="Resources\joker-Noir.jpg" />
     <EmbeddedResource Include="Resources\ROI-Carreau.jpg" />
     <EmbeddedResource Include="Resources\ROI-Coeur.jpg" />
     <EmbeddedResource Include="Resources\ROI-Pique.jpg" />
@@ -149,7 +148,6 @@
     <EmbeddedResource Include="Resources\VALET-Coeur.jpg" />
     <EmbeddedResource Include="Resources\VALET-Pique.jpg" />
     <EmbeddedResource Include="Resources\VALET-Trefle.jpg" />
-    <Content Include="Resources\Wednesday.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="View\Images\" />

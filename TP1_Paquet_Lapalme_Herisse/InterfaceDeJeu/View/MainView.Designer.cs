@@ -28,13 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.currentPlayerControl1 = new InterfaceDeJeu.View.CurrentPlayerControl();
             this.SuspendLayout();
+            // 
+            // currentPlayerControl1
+            // 
+            this.currentPlayerControl1.Location = new System.Drawing.Point(12, 349);
+            this.currentPlayerControl1.Name = "currentPlayerControl1";
+            this.currentPlayerControl1.Size = new System.Drawing.Size(1042, 246);
+            this.currentPlayerControl1.TabIndex = 0;
             // 
             // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1156, 607);
+            this.ClientSize = new System.Drawing.Size(1069, 607);
+            this.Controls.Add(this.currentPlayerControl1);
             this.Name = "MainView";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -42,6 +51,8 @@
         }
 
         #endregion
+
+        private CurrentPlayerControl currentPlayerControl1;
     }
 }
 

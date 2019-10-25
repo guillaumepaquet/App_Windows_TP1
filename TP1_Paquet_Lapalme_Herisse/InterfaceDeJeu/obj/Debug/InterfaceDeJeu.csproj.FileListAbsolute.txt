@@ -11,3 +11,16 @@ D:\Antoine\Session5\DevWindows\TPCartes\App_Windows_TP1-Antoine\TP1_Paquet_Lapal
 D:\Antoine\Session5\DevWindows\TPCartes\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.csproj.CopyComplete
 D:\Antoine\Session5\DevWindows\TPCartes\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.exe
 D:\Antoine\Session5\DevWindows\TPCartes\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.pdb
+M:\S. Aut. 2019\App. Windows\TP1_Paquet_Lapalme_Herisse\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.csprojResolveAssemblyReference.cache
+M:\S. Aut. 2019\App. Windows\TP1_Paquet_Lapalme_Herisse\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.Properties.Resources.resources
+M:\S. Aut. 2019\App. Windows\TP1_Paquet_Lapalme_Herisse\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.View.CurrentPlayerControl.resources
+M:\S. Aut. 2019\App. Windows\TP1_Paquet_Lapalme_Herisse\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.View.MainView.resources
+M:\S. Aut. 2019\App. Windows\TP1_Paquet_Lapalme_Herisse\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.csproj.GenerateResource.Cache
+M:\S. Aut. 2019\App. Windows\TP1_Paquet_Lapalme_Herisse\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.csproj.CoreCompileInputs.cache
+M:\S. Aut. 2019\App. Windows\TP1_Paquet_Lapalme_Herisse\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.exe
+M:\S. Aut. 2019\App. Windows\TP1_Paquet_Lapalme_Herisse\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.pdb
+M:\S. Aut. 2019\App. Windows\TP1_Paquet_Lapalme_Herisse\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\bin\Debug\InterfaceDeJeu.exe.config
+M:\S. Aut. 2019\App. Windows\TP1_Paquet_Lapalme_Herisse\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\bin\Debug\InterfaceDeJeu.exe
+M:\S. Aut. 2019\App. Windows\TP1_Paquet_Lapalme_Herisse\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\bin\Debug\InterfaceDeJeu.pdb
+M:\S. Aut. 2019\App. Windows\TP1_Paquet_Lapalme_Herisse\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\bin\Debug\CarteLibrairie.dll
+M:\S. Aut. 2019\App. Windows\TP1_Paquet_Lapalme_Herisse\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\bin\Debug\CarteLibrairie.pdb
