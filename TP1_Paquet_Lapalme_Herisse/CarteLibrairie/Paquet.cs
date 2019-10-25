@@ -13,19 +13,31 @@ namespace CarteLibrairie
 
         public Paquet()
         {
-            foreach (Couleur couleur in Enum.GetValues(typeof(Couleur)))
+            /*foreach (Couleur couleur in Enum.GetValues(typeof(Couleur)))
             {
                 for (int i = 1; i <= 13; i++)
                     paquet.Add(new Carte(couleur, i));
+            }*/
+
+            foreach (Couleur couleur in Enum.GetValues(typeof(Couleur)))
+            {
+                for (int i = 1; i <= 14; i++)
+                    paquet.Add(new Carte(couleur, (Valeur)i));
+            }
+
+        }
+
+        //Rajouter les carte fini de la pile au Paquet
+        public void Ajouter(params Carte[] carte)
+        {
+
+            foreach (Carte c in carte)
+            {
+                paquet.Add(c);
             }
         }
-
-        public void Ajouter(Carte carte)
-        {
-            paquet.Add(carte);
-        }
-
-        public Carte? Tirer()
+        
+        public Carte Tirer()
         {
             if(paquet.Count > 0) {
                 int i = r.Next(paquet.Count);
@@ -33,7 +45,7 @@ namespace CarteLibrairie
                 paquet.Remove(carte);
                 return carte;
             }
-            return null;
+            throw new System.ArgumentException("Paquet vide"); ;
         }
 
         public string Afficher()

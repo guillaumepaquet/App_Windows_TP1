@@ -9,8 +9,10 @@ namespace CarteLibrairie
     class Joueur
     {
         public string Nom { get; set; }
+        public Role Role { get; set; }
 
-        public Paquet Paquet { get; set; }
+        // Le joueur a une main et non un paquet
+        public Main SaMain { get; set; }
 
         public Joueur(string nom)
         {
