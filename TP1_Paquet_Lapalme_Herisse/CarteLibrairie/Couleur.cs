@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace CarteLibrairie
 {
-    class Joueur
+    public enum Couleur
     {
-        public string Nom { get; set; }
-        public Role Role { get; set; }
-        public Main SaMain { get; set; }
+        TREFLE, PIQUE, CARREAU, COEUR, NOIR, ROUGE
     }
 }
