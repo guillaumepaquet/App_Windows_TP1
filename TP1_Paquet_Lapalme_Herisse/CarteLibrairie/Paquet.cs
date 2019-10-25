@@ -13,11 +13,6 @@ namespace CarteLibrairie
 
         public Paquet()
         {
-            foreach (Couleur couleur in Enum.GetValues(typeof(Couleur)))
-            {
-                for (int i = 1; i <= 13; i++)
-                    paquet.Add(new Carte(couleur, i));
-            }
         }
 
         public void Ajouter(Carte carte)

@@ -5,53 +5,44 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CarteLibrairie
-{
-    public enum Couleur { TREFLE, PIQUE, CARREAU, COEUR};
+{    
 
     public struct Carte
     {
-        private Couleur couleur;
-        private int valeur;
 
-        public Carte(Couleur couleur, int valeur)
-        {
-            this.couleur = couleur;
-            this.valeur = valeur;
-        }
+        public Couleur Couleur { get; set; }
 
-        public Couleur Couleur
-        {
-            get { return couleur; }
-        }
+        public int Valeur { get; set; }
 
-        public string Valeur
-        {
-            get { return $"{valeur}"; }
-        }
-
-        public
-        override string ToString()
+        public string NomImageCarte()
         {
             string message = "";
-            switch (valeur)
+            if (Valeur == 14)
             {
-                case 11:
-                    message += "Valet";
-                    break;
-                case 12:
-                    message += "Dame";
-                    break;
-                case 13:
-                    message += "Roi";
-                    break;
-                case 1:
-                    message += "As";
-                    break;
-                default:
-                    message += $"{valeur}";
-                    break;
-            }            
-            return message + $" de {couleur}";
+                return message + $"Joker-{Couleur}";
+            }
+            else
+            {
+                switch (Valeur)
+                {
+                    case 11:
+                        message += "VALET";
+                        break;
+                    case 12:
+                        message += "DAME";
+                        break;
+                    case 13:
+                        message += "ROI";
+                        break;
+                    case 1:
+                        message += "AS";
+                        break;
+                    default:
+                        message += $"{Valeur}";
+                        break;
+                }
+                return message + $"-{Couleur}";
+            }
         }
     }
 }
