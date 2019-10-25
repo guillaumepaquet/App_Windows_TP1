@@ -5,44 +5,40 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CarteLibrairie
-{    
+{
 
-    public struct Carte
+    public struct Carte : IComparable<Carte>
     {
 
-        public Couleur Couleur { get; set; }
+        private Couleur couleur;
+        private Valeur valeur;
 
-        public int Valeur { get; set; }
-
-        public string NomImageCarte()
+        public Carte(Couleur couleur, Valeur valeur)
         {
-            string message = "";
-            if (Valeur == 14)
-            {
-                return message + $"Joker-{Couleur}";
-            }
-            else
-            {
-                switch (Valeur)
-                {
-                    case 11:
-                        message += "VALET";
-                        break;
-                    case 12:
-                        message += "DAME";
-                        break;
-                    case 13:
-                        message += "ROI";
-                        break;
-                    case 1:
-                        message += "AS";
-                        break;
-                    default:
-                        message += $"{Valeur}";
-                        break;
-                }
-                return message + $"-{Couleur}";
-            }
+            this.couleur = couleur;
+            this.valeur = valeur;
+        }
+
+        public Couleur Couleur
+        {
+            get { return couleur; }
+        }
+
+        public Valeur Valeur
+        {
+            get { return valeur; }
+        }
+
+        // comparer une carte avec une autre pour savoir qui est plus fort
+        public int CompareTo(Carte other)
+        {
+           return Valeur.CompareTo((int)other.valeur);
+        }
+
+        public
+        override string ToString()
+        {
+            return $"{Valeur}-{Couleur}";
         }
     }
 }

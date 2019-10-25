@@ -9,12 +9,7 @@ namespace CarteLibrairie
     class Joueur
     {
         public string Nom { get; set; }
-
-        public Paquet Paquet { get; set; }
-
-        public Joueur(string nom)
-        {
-            Nom = nom;
-        }
+        public Role Role { get; set; }
+        public Main SaMain { get; set; }
     }
 }

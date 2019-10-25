@@ -8,6 +8,6 @@ namespace CarteLibrairie
 {
     public enum Couleur
     {
-        Trefle, Pique, Carreau, Coeur, Rouge, Noir
+        TREFLE, PIQUE, CARREAU, COEUR, NOIR, ROUGE
     }
 }

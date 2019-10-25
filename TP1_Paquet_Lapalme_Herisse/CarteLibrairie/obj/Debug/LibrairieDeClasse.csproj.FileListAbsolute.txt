@@ -1,10 +1,6 @@
-D:\Antoine\Session5\DevWindows\TPCartes\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\bin\Debug\CarteLibrairie.dll
-D:\Antoine\Session5\DevWindows\TPCartes\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\bin\Debug\CarteLibrairie.pdb
-D:\Antoine\Session5\DevWindows\TPCartes\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\obj\Debug\CarteLibrairie.dll
-D:\Antoine\Session5\DevWindows\TPCartes\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\obj\Debug\CarteLibrairie.pdb
-M:\S. Aut. 2019\App. Windows\TP1_Paquet_Lapalme_Herisse\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\obj\Debug\LibrairieDeClasse.csprojResolveAssemblyReference.cache
-M:\S. Aut. 2019\App. Windows\TP1_Paquet_Lapalme_Herisse\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\obj\Debug\LibrairieDeClasse.csproj.CoreCompileInputs.cache
-M:\S. Aut. 2019\App. Windows\TP1_Paquet_Lapalme_Herisse\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\obj\Debug\CarteLibrairie.dll
-M:\S. Aut. 2019\App. Windows\TP1_Paquet_Lapalme_Herisse\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\obj\Debug\CarteLibrairie.pdb
-M:\S. Aut. 2019\App. Windows\TP1_Paquet_Lapalme_Herisse\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\bin\Debug\CarteLibrairie.dll
-M:\S. Aut. 2019\App. Windows\TP1_Paquet_Lapalme_Herisse\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\bin\Debug\CarteLibrairie.pdb
+C:\dev\App_Windows_TP1\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\bin\Debug\CarteLibrairie.dll
+C:\dev\App_Windows_TP1\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\bin\Debug\CarteLibrairie.pdb
+C:\dev\App_Windows_TP1\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\obj\Debug\LibrairieDeClasse.csprojAssemblyReference.cache
+C:\dev\App_Windows_TP1\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\obj\Debug\LibrairieDeClasse.csproj.CoreCompileInputs.cache
+C:\dev\App_Windows_TP1\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\obj\Debug\CarteLibrairie.dll
+C:\dev\App_Windows_TP1\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\obj\Debug\CarteLibrairie.pdb

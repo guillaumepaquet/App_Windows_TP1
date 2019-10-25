@@ -13,14 +13,27 @@ namespace CarteLibrairie
 
         public Paquet()
         {
+            foreach (Couleur couleur in Enum.GetValues(typeof(Couleur)))
+            {
+                if(couleur != Couleur.ROUGE && couleur != Couleur.NOIR)
+                    for (int i = 1; i <= 13; i++)
+                        paquet.Add(new Carte(couleur, (Valeur)i));
+            }
+            paquet.Add(new Carte(Couleur.NOIR, (Valeur)14));
+            paquet.Add(new Carte(Couleur.ROUGE, (Valeur)14));
+
         }
 
-        public void Ajouter(Carte carte)
+        //Rajouter les carte fini de la pile au Paquet
+        public void Ajouter(params Carte[] carte)
         {
-            paquet.Add(carte);
+            foreach (Carte c in carte)
+            {
+                paquet.Add(c);
+            }
         }
-
-        public Carte? Tirer()
+        
+        public Carte Tirer()
         {
             if(paquet.Count > 0) {
                 int i = r.Next(paquet.Count);
@@ -28,19 +41,7 @@ namespace CarteLibrairie
                 paquet.Remove(carte);
                 return carte;
             }
-            return null;
-        }
-
-        public string Afficher()
-        {
-            int i = 0;
-            string message = "";
-            foreach (var item in paquet)
-            {
-                message += item + "\n";
-                i++;
-            }
-            return message;
+            throw new System.ArgumentException("Paquet vide"); ;
         }
 
         public void Echanger(int carte1, int carte2)
