@@ -1,0 +1,12 @@
+C:\dev\App_Windows_TP1\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\bin\Debug\InterfaceDeJeu.exe.config
+C:\dev\App_Windows_TP1\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\bin\Debug\InterfaceDeJeu.exe
+C:\dev\App_Windows_TP1\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\bin\Debug\InterfaceDeJeu.pdb
+C:\dev\App_Windows_TP1\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\bin\Debug\CarteLibrairie.dll
+C:\dev\App_Windows_TP1\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\bin\Debug\CarteLibrairie.pdb
+C:\dev\App_Windows_TP1\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.csprojAssemblyReference.cache
+C:\dev\App_Windows_TP1\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.Properties.Resources.resources
+C:\dev\App_Windows_TP1\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.csproj.GenerateResource.cache
+C:\dev\App_Windows_TP1\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.csproj.CoreCompileInputs.cache
+C:\dev\App_Windows_TP1\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.csproj.CopyComplete
+C:\dev\App_Windows_TP1\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.exe
+C:\dev\App_Windows_TP1\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.pdb

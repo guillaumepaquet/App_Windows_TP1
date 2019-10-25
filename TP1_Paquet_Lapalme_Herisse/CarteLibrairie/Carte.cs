@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace CarteLibrairie
 {
-    public enum Couleur { TREFLE, PIQUE, CARREAU, COEUR};
 
-    public struct Carte
+    public struct Carte : IComparable<Carte>
     {
-        private Couleur couleur;
-        private int valeur;
 
-        public Carte(Couleur couleur, int valeur)
+        private Couleur couleur;
+        private Valeur valeur;
+
+        public Carte(Couleur couleur, Valeur valeur)
         {
             this.couleur = couleur;
             this.valeur = valeur;
@@ -24,34 +24,21 @@ namespace CarteLibrairie
             get { return couleur; }
         }
 
-        public string Valeur
+        public Valeur Valeur
         {
-            get { return $"{valeur}"; }
+            get { return valeur; }
+        }
+
+        // comparer une carte avec une autre pour savoir qui est plus fort
+        public int CompareTo(Carte other)
+        {
+           return Valeur.CompareTo((int)other.valeur);
         }
 
         public
         override string ToString()
         {
-            string message = "";
-            switch (valeur)
-            {
-                case 11:
-                    message += "Valet";
-                    break;
-                case 12:
-                    message += "Dame";
-                    break;
-                case 13:
-                    message += "Roi";
-                    break;
-                case 1:
-                    message += "As";
-                    break;
-                default:
-                    message += $"{valeur}";
-                    break;
-            }            
-            return message + $" de {couleur}";
+            return $"{Valeur}-{Couleur}";
         }
     }
 }
