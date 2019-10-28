@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2027
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceDeJeu", "InterfaceDeJeu\InterfaceDeJeu.csproj", "{F0DC6A5B-D01F-4FF0-972B-42FCCEF375B6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibrairieDeClasse", "CarteLibrairie\LibrairieDeClasse.csproj", "{8BBFEF5C-43EB-48BF-953C-7CCF07150556}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibrairieDeClasseTests", "LibrairieDeClasseTests\LibrairieDeClasseTests.csproj", "{409A0C0B-C541-43DE-81EA-B21E9C09FBF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{8BBFEF5C-43EB-48BF-953C-7CCF07150556}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BBFEF5C-43EB-48BF-953C-7CCF07150556}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BBFEF5C-43EB-48BF-953C-7CCF07150556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{409A0C0B-C541-43DE-81EA-B21E9C09FBF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{409A0C0B-C541-43DE-81EA-B21E9C09FBF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{409A0C0B-C541-43DE-81EA-B21E9C09FBF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{409A0C0B-C541-43DE-81EA-B21E9C09FBF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
