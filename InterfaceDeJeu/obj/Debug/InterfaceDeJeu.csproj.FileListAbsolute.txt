@@ -11,3 +11,5 @@ D:\Antoine\Session5\DevWindows\TPCartes\App_Windows_TP1-Antoine\TP1_Paquet_Lapal
 D:\Antoine\Session5\DevWindows\TPCartes\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.csproj.CopyComplete
 D:\Antoine\Session5\DevWindows\TPCartes\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.exe
 D:\Antoine\Session5\DevWindows\TPCartes\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.pdb
+D:\Antoine\Session5\DevWindows\TPCartes\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.View.OtherPlayerControl.resources
+D:\Antoine\Session5\DevWindows\TPCartes\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.View.PlayedCardsControl.resources
