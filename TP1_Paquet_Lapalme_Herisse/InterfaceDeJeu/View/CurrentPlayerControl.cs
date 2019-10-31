@@ -8,56 +8,153 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CarteLibrairie;
-using System.IO;
 
 namespace InterfaceDeJeu.View
 {
     public partial class CurrentPlayerControl : UserControl
     {
-        private const int WIDTH = 79;
-        private const int HEIGHT = 110;
-        private const int TOP = 50;
-        private const int LEFT = 40;
+        public int ValeurCarteJouer { get; set; }
+
+        public int NombreCarteJouer { get; set; }
+
+        private int ValeurCarteMain { get; set; }
+
+        private int NombreCarteMain { get; set; }
+
+        private List<CarteButton> carteButtons;
 
         public CurrentPlayerControl()
         {
             InitializeComponent();
-            Carte card1 = new Carte();
-            card1.Valeur = 1;
-            card1.Couleur = Couleur.Pique;
-            Carte card2 = new Carte();
-            card2.Valeur = 2;
-            card2.Couleur = Couleur.Pique;
-            Carte card3 = new Carte();
-            card3.Valeur = 3;
-            card3.Couleur = Couleur.Pique;
-            Carte card4 = new Carte();
-            card4.Valeur = 4;
-            card4.Couleur = Couleur.Pique;
-            List<Carte> cards = new List<Carte>();
-            cards.Add(card1);
-            cards.Add(card2);
-            cards.Add(card3);
-            cards.Add(card4);
-            CreateCard(cards);
         }
-
-        public void CreateCard(List<Carte> cards)
+        
+        public void PlaceCards(List<string> cards)
         {
-            int i = 4;
-            foreach (Carte card in cards)
+            NombreCarteMain = 0;
+            ValeurCarteMain = 0;
+            int i = 0;
+            foreach (string cardPath in cards)
             {
                 i++;
-                Button button = new Button();
-                button.Width = WIDTH;
-                button.Height = HEIGHT;
-                button.Top = TOP;
-                button.Left = 750 - LEFT * i;
-                button.Image = Image.FromFile(Directory.GetCurrentDirectory() + $"\\..\\..\\Resources\\{card.NomImageCarte()}.jpg");
-                panel1.Controls.Add(button);
-            }
-            
+                CarteButton carte = new CarteButton();
+                Image image = Image.FromFile("\\..\\..\\Resources\\" + cardPath + ".jpg");
+                carte.HiddenText = cardPath;
+                carte.BackgroundImage = image;
+                carte.Width = 79;
+                carte.Height = 110;
+                carte.Left = 69 * i;
+                carte.Top = 10;
+                carte.Click += OnCardClick;
+                carteButtons.Add(carte);
+            }            
         }
 
+        private void OnCardClick(object sender, EventArgs e)
+        {
+            if (!(sender is CarteButton))
+            {
+                return;
+            }
+            buttonProchainJoueur.Enabled = true;
+            CarteButton CarteClicked = (CarteButton)sender;
+            string carte = CarteClicked.HiddenText;
+            string valeurString = carte.Substring(0, carte.IndexOf('-'));
+            int valeur = 0;
+            switch (valeurString)
+            {
+                case "TROIS":
+                    valeur = 1;
+                    break;
+                case "QUATRE":
+                    valeur = 2;
+                    break;
+                case "CINQ":
+                    valeur = 3;
+                    break;
+                case "SIX":
+                    valeur = 4;
+                    break;
+                case "SEPT":
+                    valeur = 5;
+                    break;
+                case "HUIT":
+                    valeur = 6;
+                    break;
+                case "NEUF":
+                    valeur = 7;
+                    break;
+                case "DIX":
+                    valeur = 8;
+                    break;
+                case "VALET":
+                    valeur = 9;
+                    break;
+                case "DAME":
+                    valeur = 10;
+                    break;
+                case "ROI":
+                    valeur = 11;
+                    break;
+                case "AS":
+                    valeur = 12;
+                    break;
+                case "DEUX":
+                    valeur = 13;
+                    break;
+                case "JOKER":
+                    valeur = 14;
+                    break;
+                default:
+                    break;
+            }
+            if (valeur > ValeurCarteJouer && (valeur == ValeurCarteMain || ValeurCarteMain == 0))
+            {
+                CarteClicked.Enabled = false;
+                NombreCarteMain++;
+                ValeurCarteMain = valeur;
+                switch (valeur)
+                {
+                    case 14:
+                        buttonProchainJoueur.Enabled = true;
+                        break;
+                    case 13:
+                        if (NombreCarteMain == NombreCarteJouer - 1 || NombreCarteJouer == 0)
+                        {
+                            buttonProchainJoueur.Enabled = true;
+                        }
+                        break;
+                    default:
+                        if (NombreCarteMain == NombreCarteJouer || NombreCarteJouer == 0)
+                        {
+                            buttonProchainJoueur.Enabled = true;
+                        }
+                        break;
+                }
+            }
+        }
+
+        private void ButtonResetMain_Click(object sender, EventArgs e)
+        {
+            ValeurCarteMain = 0;
+            NombreCarteMain = 0;
+            foreach (var button in carteButtons)
+            {
+                if (button.Enabled == false)
+                    button.Enabled = true;
+            }
+            buttonProchainJoueur.Enabled = true;
+        }
+
+        private void ButtonProchainJoueur_Click(object sender, EventArgs e)
+        {
+            ChangeJoueurEventArgs args = new ChangeJoueurEventArgs();
+            args.NombreCarteJouer = NombreCarteMain;
+            args.ValeurCarteJouer = ValeurCarteMain;
+        }
+    }
+
+    public class CarteButton : Button
+    {
+        public string HiddenText { get; set; }
     }
 }

@@ -45,23 +45,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="View\CurrentPlayerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\CurrentPlayerControl.Designer.cs">
+      <DependentUpon>CurrentPlayerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="View\MainView.Designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\OtherPlayerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\OtherPlayerControl.Designer.cs">
+      <DependentUpon>OtherPlayerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PlayedCardsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\PlayedCardsControl.Designer.cs">
+      <DependentUpon>PlayedCardsControl.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="View\CurrentPlayerControl.resx">
+      <DependentUpon>CurrentPlayerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MainView.resx">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\OtherPlayerControl.resx">
+      <DependentUpon>OtherPlayerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PlayedCardsControl.resx">
+      <DependentUpon>PlayedCardsControl.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -80,6 +111,62 @@
       <Project>{8bbfef5c-43eb-48bf-953c-7ccf07150556}</Project>
       <Name>LibrairieDeClasse</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\AS-CARREAU.jpg" />
+    <Content Include="Resources\AS-COEUR.jpg" />
+    <Content Include="Resources\AS-PIQUE.jpg" />
+    <Content Include="Resources\AS-TREFLE.jpg" />
+    <Content Include="Resources\CINQ-CARREAU.jpg" />
+    <Content Include="Resources\CINQ-COEUR.jpg" />
+    <Content Include="Resources\CINQ-PIQUE.jpg" />
+    <Content Include="Resources\CINQ-TREFLE.jpg" />
+    <Content Include="Resources\DAME-CARREAU.jpg" />
+    <Content Include="Resources\DAME-COEUR.jpg" />
+    <Content Include="Resources\DAME-PIQUE.jpg" />
+    <Content Include="Resources\DAME-TREFLE.jpg" />
+    <Content Include="Resources\DEUX-CARREAU.jpg" />
+    <Content Include="Resources\DEUX-COEUR.jpg" />
+    <Content Include="Resources\DEUX-PIQUE.jpg" />
+    <Content Include="Resources\DEUX-TREFLE.jpg" />
+    <Content Include="Resources\DIX-CARREAU.jpg" />
+    <Content Include="Resources\DIX-COEUR.jpg" />
+    <Content Include="Resources\DIX-PIQUE.jpg" />
+    <Content Include="Resources\DIX-TREFLE.jpg" />
+    <Content Include="Resources\HUIT-CARREAU.jpg" />
+    <Content Include="Resources\HUIT-COEUR.jpg" />
+    <Content Include="Resources\HUIT-PIQUE.jpg" />
+    <Content Include="Resources\HUIT-TREFLE.jpg" />
+    <Content Include="Resources\JOKER-NOIR.jpg" />
+    <Content Include="Resources\JOKER-ROUGE.jpg" />
+    <Content Include="Resources\NEUF-CARREAU.jpg" />
+    <Content Include="Resources\NEUF-COEUR.jpg" />
+    <Content Include="Resources\NEUF-PIQUE.jpg" />
+    <Content Include="Resources\NEUF-TREFLE.jpg" />
+    <Content Include="Resources\QUATRE-CARREAU.jpg" />
+    <Content Include="Resources\QUATRE-COEUR.jpg" />
+    <Content Include="Resources\QUATRE-PIQUE.jpg" />
+    <Content Include="Resources\QUATRE-TREFLE.jpg" />
+    <Content Include="Resources\ROI-CARREAU.jpg" />
+    <Content Include="Resources\ROI-COEUR.jpg" />
+    <Content Include="Resources\ROI-PIQUE.jpg" />
+    <Content Include="Resources\ROI-TREFLE.jpg" />
+    <Content Include="Resources\SEPT-CARREAU.jpg" />
+    <Content Include="Resources\SEPT-COEUR.jpg" />
+    <Content Include="Resources\SEPT-PIQUE.jpg" />
+    <Content Include="Resources\SEPT-TREFLE.jpg" />
+    <Content Include="Resources\SIX-CARREAU.jpg" />
+    <Content Include="Resources\SIX-COEUR.jpg" />
+    <Content Include="Resources\SIX-PIQUE.jpg" />
+    <Content Include="Resources\SIX-TREFLE.jpg" />
+    <Content Include="Resources\TROIS-CARREAU.jpg" />
+    <Content Include="Resources\TROIS-COEUR.jpg" />
+    <Content Include="Resources\TROIS-PIQUE.jpg" />
+    <Content Include="Resources\TROIS-TREFLE.jpg" />
+    <Content Include="Resources\VALET-CARREAU.jpg" />
+    <Content Include="Resources\VALET-COEUR.jpg" />
+    <Content Include="Resources\VALET-PIQUE.jpg" />
+    <Content Include="Resources\VALET-TREFLE.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
