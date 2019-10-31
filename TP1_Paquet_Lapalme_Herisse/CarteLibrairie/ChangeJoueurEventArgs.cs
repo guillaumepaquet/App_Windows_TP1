@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarteLibrairie
 {
-    class ChangeJoueurEventArgs : EventArgs
+    public class ChangeJoueurEventArgs : EventArgs
     {
         public Joueur PremierJoueur { get; set; }
 
