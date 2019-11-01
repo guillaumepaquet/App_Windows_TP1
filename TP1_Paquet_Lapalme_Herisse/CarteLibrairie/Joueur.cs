@@ -1,10 +1,11 @@
-﻿using System;
+﻿using CarteLibrairie;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CarteLibrairie
+namespace CarteLibraiCarteLibrairie.Modelrie
 {
     public class Joueur
     {

@@ -9,3 +9,4 @@ C:\Users\Guillaume\Documents\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\
 C:\Users\Guillaume\Documents\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\obj\Debug\LibrairieDeClasse.csproj.CoreCompileInputs.cache
 C:\Users\Guillaume\Documents\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\obj\Debug\CarteLibrairie.dll
 C:\Users\Guillaume\Documents\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\obj\Debug\CarteLibrairie.pdb
+C:\Users\Guillaume\Documents\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\obj\Debug\LibrairieDeClasse.csprojAssemblyReference.cache
