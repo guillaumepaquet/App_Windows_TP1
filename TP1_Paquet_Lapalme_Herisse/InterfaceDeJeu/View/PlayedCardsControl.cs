@@ -20,14 +20,16 @@ namespace InterfaceDeJeu.View
         public PlayedCardsControl()
         {
             InitializeComponent();
-            MainViewPresenter.LastCardPlayed += CardPlayed;
         }
 
-        private void CardPlayed(object sender, LastCardPlayedEventArgs e)
+        public void ChangeNom(string nom)
         {
-            lastPlayerName.Text = e.Nom;
-            positionDernierJoueur.Text = e.Position;
-            AfficheCarteJouer(e.LastCardPlayed);
+            lastPlayerName.Text = nom;
+        }
+
+        public void ChangePosition(string position)
+        {
+            positionDernierJoueur.Text = position;
         }
 
         public void AfficheCarteJouer(List<string> cards)

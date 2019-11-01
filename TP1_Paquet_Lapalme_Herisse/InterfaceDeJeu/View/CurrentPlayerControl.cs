@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CarteLibrairie.Model;
 using System.IO;
 using InterfaceDeJeu.Presenter;
 using InterfaceDeJeu.Model;
@@ -49,16 +48,6 @@ namespace InterfaceDeJeu.View
         public CurrentPlayerControl()
         {
             InitializeComponent();
-            MainViewPresenter.CurrentPlayerChange += PlayerChange;
-        }
-
-        private void PlayerChange(object sender, CurrentPlayerChangeEventArgs e)
-        {
-            nomJoueur.Text = e.Nom;
-            positionJoueur.Text = e.Position;
-            PlaceCards(e.Main);
-            ValeurCarteJouer = e.ValeurCarteJouer;
-            NombreCarteJouer = e.NombreCarteJouer;
         }
 
         public void PlaceCards(List<string> cards)

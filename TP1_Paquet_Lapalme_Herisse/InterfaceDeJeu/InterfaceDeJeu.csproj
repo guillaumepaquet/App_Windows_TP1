@@ -47,11 +47,8 @@
   <ItemGroup>
     <Compile Include="Model\Carte.cs" />
     <Compile Include="Model\Couleur.cs" />
-    <Compile Include="Model\CurrentPlayerChangeEventArgs.cs" />
     <Compile Include="Model\Joueur.cs" />
-    <Compile Include="Model\LastCardPlayedEventArgs.cs" />
     <Compile Include="Model\Main.cs" />
-    <Compile Include="Model\OtherPlayerChangeEventArgs.cs" />
     <Compile Include="Model\Paquet.cs" />
     <Compile Include="Model\Role.cs" />
     <Compile Include="Model\Valeur.cs" />
