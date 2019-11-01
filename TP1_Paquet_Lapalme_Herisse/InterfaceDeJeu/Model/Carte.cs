@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CarteLibrairie.Model
+namespace InterfaceDeJeu.Model
 {
 
     public struct Carte : IComparable<Carte>

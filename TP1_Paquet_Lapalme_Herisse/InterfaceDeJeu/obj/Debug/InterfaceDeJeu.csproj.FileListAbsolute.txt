@@ -39,3 +39,15 @@ M:\App_Windows_TP1-branchPaquet\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\De
 M:\App_Windows_TP1-branchPaquet\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.csproj.CoreCompileInputs.cache
 M:\App_Windows_TP1-branchPaquet\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.exe
 M:\App_Windows_TP1-branchPaquet\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.pdb
+M:\App_Windows_TP1-master\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\bin\Debug\InterfaceDeJeu.exe.config
+M:\App_Windows_TP1-master\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\bin\Debug\InterfaceDeJeu.exe
+M:\App_Windows_TP1-master\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\bin\Debug\InterfaceDeJeu.pdb
+M:\App_Windows_TP1-master\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.Properties.Resources.resources
+M:\App_Windows_TP1-master\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.View.CurrentPlayerControl.resources
+M:\App_Windows_TP1-master\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.View.MainView.resources
+M:\App_Windows_TP1-master\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.View.OtherPlayerControl.resources
+M:\App_Windows_TP1-master\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.View.PlayedCardsControl.resources
+M:\App_Windows_TP1-master\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.csproj.GenerateResource.Cache
+M:\App_Windows_TP1-master\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.csproj.CoreCompileInputs.cache
+M:\App_Windows_TP1-master\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.exe
+M:\App_Windows_TP1-master\TP1_Paquet_Lapalme_Herisse\InterfaceDeJeu\obj\Debug\InterfaceDeJeu.pdb

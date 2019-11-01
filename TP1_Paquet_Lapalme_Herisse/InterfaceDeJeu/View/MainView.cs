@@ -17,9 +17,6 @@ namespace InterfaceDeJeu.View
         public MainView()
         {
             InitializeComponent();
-            MainViewPresenter.OtherPlayerChange1 += ChangeOtherPlayer1;
-            MainViewPresenter.OtherPlayerChange2 += ChangeOtherPlayer2;
-            MainViewPresenter.OtherPlayerChange3 += ChangeOtherPlayer3;
         }
 
         public event EventHandler ResetHand
@@ -42,26 +39,6 @@ namespace InterfaceDeJeu.View
         public void ProchainJoueur()
         {
             currentPlayerControl1.ProchainJoueur();
-        }
-        private void ChangeOtherPlayer3(object sender, OtherPlayerChangeEventArgs e)
-        {
-            otherPlayerControl3.ChangeNom(e.Nom);
-            otherPlayerControl3.ChangePosition(e.Position);
-            otherPlayerControl3.ChangeNombreCarte(e.NombreCarte);
-        }
-
-        private void ChangeOtherPlayer2(object sender, OtherPlayerChangeEventArgs e)
-        {
-            otherPlayerControl2.ChangeNom(e.Nom);
-            otherPlayerControl2.ChangePosition(e.Position);
-            otherPlayerControl2.ChangeNombreCarte(e.NombreCarte);
-        }
-
-        private void ChangeOtherPlayer1(object sender, OtherPlayerChangeEventArgs e)
-        {
-            otherPlayerControl1.ChangeNom(e.Nom);
-            otherPlayerControl1.ChangePosition(e.Position);
-            otherPlayerControl1.ChangeNombreCarte(e.NombreCarte);
         }
 
         public int GetNombreCarteMain()
@@ -107,6 +84,43 @@ namespace InterfaceDeJeu.View
         public string GetNomDernierJoueur()
         {
             return playedCardsControl1.GetNomDernierJoueur();
+        }
+
+        public void ChangeCurrentJoueur(string nom, string position, List<string> cartes, int valeurCarteJouer, int nombreCarteJouer)
+        {
+            currentPlayerControl1.ChangeNomJoueur(nom);
+            currentPlayerControl1.ChangePositionJoueur(position);
+            currentPlayerControl1.PlaceCards(cartes);
+            currentPlayerControl1.ValeurCarteJouer = valeurCarteJouer;
+            currentPlayerControl1.NombreCarteJouer = nombreCarteJouer;
+        }
+
+        public void ChangeOtherJoueur1(string nom, string position, int nbCarte)
+        {
+            otherPlayerControl1.ChangeNom(nom);
+            otherPlayerControl1.ChangePosition(position);
+            otherPlayerControl1.ChangeNombreCarte(nbCarte);
+        }
+
+        public void ChangeOtherJoueur2(string nom, string position, int nbCarte)
+        {
+            otherPlayerControl2.ChangeNom(nom);
+            otherPlayerControl2.ChangePosition(position);
+            otherPlayerControl2.ChangeNombreCarte(nbCarte);
+        }
+
+        public void ChangeOtherJoueur3(string nom, string position, int nbCarte)
+        {
+            otherPlayerControl3.ChangeNom(nom);
+            otherPlayerControl3.ChangePosition(position);
+            otherPlayerControl3.ChangeNombreCarte(nbCarte);
+        }
+
+        public void ChangeLastCardPlayed(string nom, string position, List<string> cartes)
+        {
+            playedCardsControl1.ChangeNom(nom);
+            playedCardsControl1.ChangePosition(position);
+            playedCardsControl1.AfficheCarteJouer(cartes);
         }
     }
 }

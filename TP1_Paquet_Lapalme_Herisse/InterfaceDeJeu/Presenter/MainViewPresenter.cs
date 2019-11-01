@@ -1,5 +1,4 @@
-﻿using CarteLibrairie.Model;
-using InterfaceDeJeu.Model;
+﻿using InterfaceDeJeu.Model;
 using InterfaceDeJeu.View;
 using System;
 using System.Collections.Generic;
@@ -19,14 +18,6 @@ namespace InterfaceDeJeu.Presenter
         private int valeurCarteJouer = 0;
         private List<string> carteJouer = new List<string>();
         private Joueur dernierJoueur = null;
-
-        public static event EventHandler<OtherPlayerChangeEventArgs> OtherPlayerChange1;
-        public static event EventHandler<OtherPlayerChangeEventArgs> OtherPlayerChange2;
-        public static event EventHandler<OtherPlayerChangeEventArgs> OtherPlayerChange3;
-
-        public static event EventHandler<CurrentPlayerChangeEventArgs> CurrentPlayerChange;
-
-        public static event EventHandler<LastCardPlayedEventArgs> LastCardPlayed;
 
         public MainViewPresenter(IMainView aMainView)
         {
@@ -207,51 +198,20 @@ namespace InterfaceDeJeu.Presenter
 
         private void changeJoueur()
         {
-            CurrentPlayerChangeEventArgs currentPlayerArgs = CreateCurrentPlayerArgs(joueurs[0]);
-            OtherPlayerChangeEventArgs otherPlayer1Args = CreateOtherPlayerArgs(joueurs[1]);
-            OtherPlayerChangeEventArgs otherPlayer2Args = CreateOtherPlayerArgs(joueurs[2]);
-            OtherPlayerChangeEventArgs otherPlayer3Args = CreateOtherPlayerArgs(joueurs[3]);
-            LastCardPlayedEventArgs lastCardPlayedArgs = CreateLastCardPlayedArgs(carteJouer, dernierJoueur);
-
-            CurrentPlayerChange?.Invoke(null, currentPlayerArgs);
-            OtherPlayerChange1?.Invoke(null, otherPlayer1Args);
-            OtherPlayerChange2?.Invoke(null, otherPlayer2Args);
-            OtherPlayerChange3?.Invoke(null, otherPlayer3Args);
-            LastCardPlayed?.Invoke(null, lastCardPlayedArgs);
-        }
-
-        private CurrentPlayerChangeEventArgs CreateCurrentPlayerArgs(Joueur joueur)
-        {
-            CurrentPlayerChangeEventArgs args = new CurrentPlayerChangeEventArgs();
-            args.Nom = joueur.Nom;
-            args.Position = joueur.Role.ToString();
+            //LastCardPlayedEventArgs lastCardPlayedArgs = CreateLastCardPlayedArgs(carteJouer, dernierJoueur);
+            
             List<string> main = new List<string>();
-            foreach (Carte carte in joueur.SaMain)
+            foreach (Carte carte in joueurs[0].SaMain)
             {
                 main.Add(carte.NomCarte());
             }
-            args.Main = main;
-            args.NombreCarteJouer = nombreCarteJouer;
-            args.ValeurCarteJouer = valeurCarteJouer;
-            return args;
-        }
-
-        private OtherPlayerChangeEventArgs CreateOtherPlayerArgs(Joueur joueur)
-        {
-            OtherPlayerChangeEventArgs args = new OtherPlayerChangeEventArgs();
-            args.Nom = joueur.Nom;
-            args.Position = joueur.Role.ToString();
-            args.NombreCarte = joueur.SaMain.Count;
-            return args;
-        }
-
-        private LastCardPlayedEventArgs CreateLastCardPlayedArgs(List<string> cards, Joueur joueur)
-        {
-            LastCardPlayedEventArgs args = new LastCardPlayedEventArgs();
-            args.Nom = joueur is null ? "" : joueur.Nom;
-            args.Position = joueur is null ? "" : joueur.Role.ToString();
-            args.LastCardPlayed = cards;
-            return args;
+            mainView.ChangeCurrentJoueur(joueurs[0].Nom, joueurs[0].Role.ToString(), main, valeurCarteJouer, nombreCarteJouer);
+            mainView.ChangeOtherJoueur1(joueurs[1].Nom, joueurs[1].Role.ToString(), joueurs[1].SaMain.Count);
+            mainView.ChangeOtherJoueur2(joueurs[2].Nom, joueurs[2].Role.ToString(), joueurs[2].SaMain.Count);
+            mainView.ChangeOtherJoueur3(joueurs[3].Nom, joueurs[3].Role.ToString(), joueurs[3].SaMain.Count);
+            string nom = dernierJoueur is null ? "" : dernierJoueur.Nom;
+            string position = dernierJoueur is null ? "" : dernierJoueur.Role.ToString();
+            mainView.ChangeLastCardPlayed(nom, position, carteJouer);
         }
     }
 }
