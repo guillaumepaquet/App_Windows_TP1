@@ -45,6 +45,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Carte.cs" />
+    <Compile Include="Model\Couleur.cs" />
+    <Compile Include="Model\CurrentPlayerChangeEventArgs.cs" />
+    <Compile Include="Model\Joueur.cs" />
+    <Compile Include="Model\LastCardPlayedEventArgs.cs" />
+    <Compile Include="Model\Main.cs" />
+    <Compile Include="Model\OtherPlayerChangeEventArgs.cs" />
+    <Compile Include="Model\Paquet.cs" />
+    <Compile Include="Model\Role.cs" />
+    <Compile Include="Model\Valeur.cs" />
+    <Compile Include="Presenter\MainViewPresenter.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -56,6 +67,10 @@
     <Compile Include="View\CurrentPlayerControl.Designer.cs">
       <DependentUpon>CurrentPlayerControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\ICurrentPlayerControl.cs" />
+    <Compile Include="View\IMainView.cs" />
+    <Compile Include="View\IOtherPlayerControl.cs" />
+    <Compile Include="View\IPlayerCardsControl.cs" />
     <Compile Include="View\MainView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,12 +120,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CarteLibrairie\LibrairieDeClasse.csproj">
-      <Project>{8bbfef5c-43eb-48bf-953c-7ccf07150556}</Project>
-      <Name>LibrairieDeClasse</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\AS-CARREAU.jpg" />

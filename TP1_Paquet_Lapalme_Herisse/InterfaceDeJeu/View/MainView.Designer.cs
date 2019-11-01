@@ -28,22 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.nouvellePartie = new System.Windows.Forms.Button();
+            this.playedCardsControl1 = new InterfaceDeJeu.View.PlayedCardsControl();
             this.otherPlayerControl3 = new InterfaceDeJeu.View.OtherPlayerControl();
             this.otherPlayerControl2 = new InterfaceDeJeu.View.OtherPlayerControl();
             this.otherPlayerControl1 = new InterfaceDeJeu.View.OtherPlayerControl();
             this.currentPlayerControl1 = new InterfaceDeJeu.View.CurrentPlayerControl();
-            this.playedCardsControl1 = new InterfaceDeJeu.View.PlayedCardsControl();
             this.SuspendLayout();
             // 
-            // nouvellePartie
+            // playedCardsControl1
             // 
-            this.nouvellePartie.Location = new System.Drawing.Point(12, 6);
-            this.nouvellePartie.Name = "nouvellePartie";
-            this.nouvellePartie.Size = new System.Drawing.Size(148, 23);
-            this.nouvellePartie.TabIndex = 4;
-            this.nouvellePartie.Text = "Nouvelle Partie";
-            this.nouvellePartie.UseVisualStyleBackColor = true;
+            this.playedCardsControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.playedCardsControl1.Location = new System.Drawing.Point(168, 207);
+            this.playedCardsControl1.Name = "playedCardsControl1";
+            this.playedCardsControl1.Size = new System.Drawing.Size(763, 198);
+            this.playedCardsControl1.TabIndex = 5;
             // 
             // otherPlayerControl3
             // 
@@ -68,18 +66,16 @@
             // 
             // currentPlayerControl1
             // 
+            this.currentPlayerControl1.Etat = 0;
             this.currentPlayerControl1.Location = new System.Drawing.Point(45, 401);
             this.currentPlayerControl1.Name = "currentPlayerControl1";
+            this.currentPlayerControl1.NombreCarteJouer = 0;
+            this.currentPlayerControl1.NombreCarteMain = 0;
+            this.currentPlayerControl1.NomCarteMain = null;
             this.currentPlayerControl1.Size = new System.Drawing.Size(1050, 246);
             this.currentPlayerControl1.TabIndex = 0;
-            // 
-            // playedCardsControl1
-            // 
-            this.playedCardsControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.playedCardsControl1.Location = new System.Drawing.Point(168, 207);
-            this.playedCardsControl1.Name = "playedCardsControl1";
-            this.playedCardsControl1.Size = new System.Drawing.Size(763, 198);
-            this.playedCardsControl1.TabIndex = 5;
+            this.currentPlayerControl1.ValeurCarteJouer = 0;
+            this.currentPlayerControl1.ValeurCarteMain = 0;
             // 
             // MainView
             // 
@@ -87,7 +83,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1156, 659);
             this.Controls.Add(this.playedCardsControl1);
-            this.Controls.Add(this.nouvellePartie);
             this.Controls.Add(this.otherPlayerControl3);
             this.Controls.Add(this.otherPlayerControl2);
             this.Controls.Add(this.otherPlayerControl1);
@@ -104,7 +99,6 @@
         private OtherPlayerControl otherPlayerControl1;
         private OtherPlayerControl otherPlayerControl2;
         private OtherPlayerControl otherPlayerControl3;
-        private System.Windows.Forms.Button nouvellePartie;
         private PlayedCardsControl playedCardsControl1;
     }
 }
