@@ -32,7 +32,9 @@ namespace CarteLibrairie
         // comparer une carte avec une autre pour savoir qui est plus fort
         public int CompareTo(Carte other)
         {
-           return Valeur.CompareTo((int)other.valeur);
+            int c1 = (int) Valeur;
+            int C2 = (int)other.Valeur;
+           return    c1.CompareTo(C2);
         }
 
         public

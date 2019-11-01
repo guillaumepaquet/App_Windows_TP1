@@ -46,6 +46,12 @@ namespace CarteLibrairie
             }
             return tmp.ToArray();
         }
+        public static Main operator +(Main m, Carte c)
+        {
+            m.AddCarte(c);
+            return m;
+        }
+
 
         //sorte avec de la plus forte a la plus faible avec le compare to du strut carte (pas teste )
         public void SortMain()
