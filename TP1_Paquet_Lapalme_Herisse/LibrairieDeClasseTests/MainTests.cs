@@ -30,7 +30,7 @@ namespace CarteGame.Tests
             maMain += carte3;
             maMain += carte4;
             Carte[] c = new Carte[] { carte1, carte2 }; 
-            CollectionAssert.AreEqual(maMain.deposer(carte1, carte2),c);
+            CollectionAssert.AreEqual(maMain.Deposer(carte1, carte2),c);
         }
         [TestMethod]
         [ExpectedException(typeof(ArgumentException), "Cartes ne sont pas presents dans la main")]
@@ -46,7 +46,7 @@ namespace CarteGame.Tests
             maMain += carte2;
            
             Carte[] c = new Carte[] { carte1, carte2 };
-            maMain.deposer(carte3, carte4);
+            maMain.Deposer(carte3, carte4);
 
         }
 
@@ -63,17 +63,17 @@ namespace CarteGame.Tests
             String expected = $"Voici ta main \n 3 de {Couleur.CARREAU} \nDame de {Couleur.TREFLE} \n";
             Assert.AreEqual(maMain.ToString(), expected);
         }
-        [TestMethod]
+        /*[TestMethod]
         public void TestIndexerGetterFound()
         {
-         
+
             Carte carte1 = new Carte(couleur: Couleur.CARREAU, valeur: Valeur.TROIS);
             Main maMain = new Main();
             maMain += carte1;
 
 
             Assert.AreEqual(carte1, maMain[Valeur.TROIS, Couleur.CARREAU]);
-          
+
 
         }
         [TestMethod]
@@ -82,14 +82,97 @@ namespace CarteGame.Tests
         public void TestIndexerGetterNoFound()
         {
             Carte carte1 = new Carte(couleur: Couleur.CARREAU, valeur: Valeur.TROIS);
-           
+
             Main maMain = new Main();
             maMain += carte1;
             Carte carte2 = maMain[valeur: Valeur.QUATRE, couleur: Couleur.CARREAU];
-           /* System.ArgumentException(message)*/
-            
+            System.ArgumentException(message)
 
+
+
+        }*/
+        [TestMethod]
+        public void TestCarteConstructor()
+        {
+            Carte c = new Carte(Couleur.COEUR, Valeur.AS);
+            Assert.IsTrue( c.Valeur == Valeur.AS && c.Couleur == Couleur.COEUR);
         }
+
+        [TestMethod]
+        public void TestCarteToSring()
+        {
+            Carte c = new Carte(Couleur.NOIR, Valeur.JOKER);
+            Assert.AreEqual(c.ToString(), "JOKER-NOIR");
+        }
+
+        [TestMethod]
+        public void TestComparableSameCarte()
+        {
+            Carte c = new Carte(Couleur.NOIR, Valeur.JOKER);
+            Assert.IsTrue(c.CompareTo(new Carte(Couleur.NOIR, Valeur.JOKER)) == 0);
+        }
+        [TestMethod]
+        public void TestComparableWithBiggerCarte()
+        {
+            Carte c = new Carte(Couleur.COEUR, Valeur.NEUF);
+            Assert.IsTrue(c.CompareTo(new Carte(Couleur.COEUR, Valeur.DEUX)) == -1);
+        }
+        [TestMethod]
+        public void TestComparableWithSmallerCarte()
+        {
+            Carte c = new Carte(Couleur.COEUR, Valeur.NEUF);
+            Assert.IsTrue(c.CompareTo(new Carte(Couleur.COEUR, Valeur.HUIT)) == 1);
+        }
+
+        [TestMethod]
+        public void TestPaquetConstructor()
+        {
+            Paquet p = new Paquet();
+            Assert.IsTrue(p.cartes.Count == 54);
+        }
+
+
+        [TestMethod]
+        public void TestPaquetTirer()
+        {
+            Paquet p = new Paquet();
+
+            Assert.AreEqual(p.Tirer() ,new Carte(Couleur.TREFLE,Valeur.TROIS));
+        }
+        [TestMethod]
+        public void TestPaquetBrasser()
+        {
+            Paquet p = new Paquet();
+            p.Brasser();
+            Assert.AreNotEqual(p.cartes.First(), new Carte(Couleur.TREFLE, Valeur.TROIS));
+        }
+        [TestMethod]
+        public void TestPaquetEchanger()
+        {
+            Paquet p = new Paquet();
+            Carte c1 = p.cartes.First();
+            
+            p.Echanger(0, 1);
+            Assert.AreNotEqual(p.cartes.First(),c1 );
+        }
+        [TestMethod]
+        public void TestPaquetAjouter()
+        {
+            Paquet p = new Paquet();
+            Carte c1 = p.cartes.First();
+
+            p.Ajouter(c1);
+            Assert.IsTrue(p.cartes.Count == 55);
+        }
+
+
+
+
+
+
+
+
+
 
 
     }
