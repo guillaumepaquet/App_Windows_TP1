@@ -4,3 +4,8 @@ C:\dev\App_Windows_TP1\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\obj\Debug\Libra
 C:\dev\App_Windows_TP1\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\obj\Debug\LibrairieDeClasse.csproj.CoreCompileInputs.cache
 C:\dev\App_Windows_TP1\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\obj\Debug\CarteLibrairie.dll
 C:\dev\App_Windows_TP1\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\obj\Debug\CarteLibrairie.pdb
+C:\Users\Guillaume\Documents\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\bin\Debug\CarteLibrairie.dll
+C:\Users\Guillaume\Documents\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\bin\Debug\CarteLibrairie.pdb
+C:\Users\Guillaume\Documents\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\obj\Debug\LibrairieDeClasse.csproj.CoreCompileInputs.cache
+C:\Users\Guillaume\Documents\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\obj\Debug\CarteLibrairie.dll
+C:\Users\Guillaume\Documents\App_Windows_TP1-Antoine\TP1_Paquet_Lapalme_Herisse\CarteLibrairie\obj\Debug\CarteLibrairie.pdb

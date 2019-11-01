@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarteLibrairie
 {
-    class Joueur
+    public class Joueur
     {
         public string Nom { get; set; }
         public Role Role { get; set; }

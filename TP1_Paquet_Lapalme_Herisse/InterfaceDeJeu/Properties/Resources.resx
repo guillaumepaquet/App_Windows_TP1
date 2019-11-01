@@ -46,7 +46,7 @@
     
     mimetype: application/x-microsoft.net.object.binary.base64
     value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
@@ -60,6 +60,7 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
@@ -68,9 +69,10 @@
               <xsd:sequence>
                 <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="name" use="required" type="xsd:string" />
               <xsd:attribute name="type" type="xsd:string" />
               <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
@@ -85,9 +87,10 @@
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
                 <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
@@ -109,9 +112,151 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Joker1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Joker-Noir.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="joker2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\joker-Rouge.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DEUX-Carreau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DEUX-Carreau.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DEUX-Coeur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DEUX-Coeur.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DEUX-Pique" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DEUX-Pique.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DEUX-Trefle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DEUX-Trefle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TROIS-Carreau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TROIS-Carreau.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TROIS-Coeur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TROIS-Coeur.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CINQ-Coeur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CINQ-Coeur.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CINQ-Pique" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CINQ-Pique.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CINQ-Trefle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CINQ-Trefle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SIX-Carreau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SIX-Carreau.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SIX-Coeur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SIX-Coeur.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SIX-Pique" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SIX-Pique.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SIX-Trefle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SIX-Trefle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SEPT-Carreau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SEPT-Carreau.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SEPT-Coeur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SEPT-Coeur.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SEPT-Pique" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SEPT-Pique.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SEPT-Trefle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SEPT-Trefle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HUIT-Carreau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HUIT-Carreau.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HUIT-Coeur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HUIT-Coeur.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HUIT-Pique" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HUIT-Pique.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HUIT-Trefle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HUIT-Trefle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NEUF-Carreau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NEUF-Carreau.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NEUF-Coeur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NEUF-Coeur.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NEUF-Pique" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NEUF-Pique.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NEUF-Trefle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NEUF-Trefle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DIX-Carreau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DIX-Carreau.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DIX-Coeur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DIX-Coeur.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DIX-Pique" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DIX-Pique.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DIX-Trefle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DIX-Trefle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AS-Carreau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AS-Carreau.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AS-Coeur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AS-Coeur.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AS-Pique" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AS-Pique.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AS-Trefle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AS-Trefle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DAME-Carreau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DAME-Carreau.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DAME-Coeur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DAME-Coeur.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DAME-Pique" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DAME-Pique.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DAME-Trefle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DAME-Trefle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ROI-Carreau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ROI-Carreau.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ROI-Coeur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ROI-Coeur.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ROI-Pique" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ROI-Pique.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ROI-Trefle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ROI-Trefle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VALET-Carreau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VALET-Carreau.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VALET-Coeur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VALET-Coeur.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VALET-Pique" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VALET-Pique.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VALET-Trefle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VALET-Trefle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
