@@ -63,9 +63,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CarteLibrairie\LibrairieDeClasse.csproj">
-      <Project>{8BBFEF5C-43EB-48BF-953C-7CCF07150556}</Project>
-      <Name>LibrairieDeClasse</Name>
+    <ProjectReference Include="..\InterfaceDeJeu\InterfaceDeJeu.csproj">
+      <Project>{f0dc6a5b-d01f-4ff0-972b-42fccef375b6}</Project>
+      <Name>InterfaceDeJeu</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

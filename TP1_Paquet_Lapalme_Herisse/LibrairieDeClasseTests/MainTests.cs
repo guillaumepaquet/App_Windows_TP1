@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CarteLibrairie.Model;
 
 namespace CarteGame.Tests
 {
@@ -17,52 +18,52 @@ namespace CarteGame.Tests
             Assert.Fail();
         }
 
-        [TestMethod()]
-        public void deposerReussiTest()
-        {
-            Carte carte1 = new Carte(couleur: Couleur.CARREAU, valeur: Valeur.TROIS);
-            Carte carte2 = new Carte(couleur: Couleur.TREFLE, valeur: Valeur.DAME);
-            Carte carte3 = new Carte(couleur: Couleur.COEUR, valeur: Valeur.HUIT);
-            Carte carte4 = new Carte(couleur: Couleur.PIQUE, valeur: Valeur.AS);
-            Main maMain = new Main();
-            maMain += carte1;
-            maMain += carte2;
-            maMain += carte3;
-            maMain += carte4;
-            Carte[] c = new Carte[] { carte1, carte2 }; 
-            CollectionAssert.AreEqual(maMain.Deposer(carte1, carte2),c);
-        }
-        [TestMethod]
-        [ExpectedException(typeof(ArgumentException), "Cartes ne sont pas presents dans la main")]
-        public void DeposerFailTest()
-        {
+        //[TestMethod()]
+        //public void deposerReussiTest()
+        //{
+        //    Carte carte1 = new Carte(couleur: Couleur.CARREAU, valeur: Valeur.TROIS);
+        //    Carte carte2 = new Carte(couleur: Couleur.TREFLE, valeur: Valeur.DAME);
+        //    Carte carte3 = new Carte(couleur: Couleur.COEUR, valeur: Valeur.HUIT);
+        //    Carte carte4 = new Carte(couleur: Couleur.PIQUE, valeur: Valeur.AS);
+        //    Main maMain = new Main();
+        //    maMain += carte1;
+        //    maMain += carte2;
+        //    maMain += carte3;
+        //    maMain += carte4;
+        //    Carte[] c = new Carte[] { carte1, carte2 }; 
+        //    CollectionAssert.AreEqual(maMain.Deposer(carte1, carte2),c);
+        //}
+        //[TestMethod]
+        //[ExpectedException(typeof(ArgumentException), "Cartes ne sont pas presents dans la main")]
+        //public void DeposerFailTest()
+        //{
 
-            Carte carte1 = new Carte(couleur: Couleur.CARREAU, valeur: Valeur.TROIS);
-            Carte carte2 = new Carte(couleur: Couleur.TREFLE, valeur: Valeur.DAME);
-            Carte carte3 = new Carte(couleur: Couleur.COEUR, valeur: Valeur.HUIT);
-            Carte carte4 = new Carte(couleur: Couleur.PIQUE, valeur: Valeur.AS);
-            Main maMain = new Main();
-            maMain += carte1;
-            maMain += carte2;
+        //    Carte carte1 = new Carte(couleur: Couleur.CARREAU, valeur: Valeur.TROIS);
+        //    Carte carte2 = new Carte(couleur: Couleur.TREFLE, valeur: Valeur.DAME);
+        //    Carte carte3 = new Carte(couleur: Couleur.COEUR, valeur: Valeur.HUIT);
+        //    Carte carte4 = new Carte(couleur: Couleur.PIQUE, valeur: Valeur.AS);
+        //    Main maMain = new Main();
+        //    maMain += carte1;
+        //    maMain += carte2;
            
-            Carte[] c = new Carte[] { carte1, carte2 };
-            maMain.Deposer(carte3, carte4);
+        //    Carte[] c = new Carte[] { carte1, carte2 };
+        //    maMain.Deposer(carte3, carte4);
 
-        }
+        //}
 
 
-        [TestMethod()]
-        public void ToStringTest()
-        {
+        //[TestMethod()]
+        //public void ToStringTest()
+        //{
            
-            Main maMain = new Main();
-            maMain += new Carte(couleur: Couleur.CARREAU, valeur: Valeur.TROIS);
-            maMain += new Carte(couleur: Couleur.TREFLE, valeur: Valeur.DAME);
-            maMain += new Carte(couleur: Couleur.TREFLE, valeur: Valeur.DAME);
+        //    Main maMain = new Main();
+        //    maMain += new Carte(couleur: Couleur.CARREAU, valeur: Valeur.TROIS);
+        //    maMain += new Carte(couleur: Couleur.TREFLE, valeur: Valeur.DAME);
+        //    maMain += new Carte(couleur: Couleur.TREFLE, valeur: Valeur.DAME);
 
-            String expected = $"Voici ta main \n 3 de {Couleur.CARREAU} \nDame de {Couleur.TREFLE} \n";
-            Assert.AreEqual(maMain.ToString(), expected);
-        }
+        //    String expected = $"Voici ta main \n 3 de {Couleur.CARREAU} \nDame de {Couleur.TREFLE} \n";
+        //    Assert.AreEqual(maMain.ToString(), expected);
+        //}
         /*[TestMethod]
         public void TestIndexerGetterFound()
         {
@@ -124,12 +125,12 @@ namespace CarteGame.Tests
             Assert.IsTrue(c.CompareTo(new Carte(Couleur.COEUR, Valeur.HUIT)) == 1);
         }
 
-        [TestMethod]
-        public void TestPaquetConstructor()
-        {
-            Paquet p = new Paquet();
-            Assert.IsTrue(p.cartes.Count == 54);
-        }
+        //[TestMethod]
+        //public void TestPaquetConstructor()
+        //{
+        //    Paquet p = new Paquet();
+        //    Assert.IsTrue(p.cartes.Count == 54);
+        //}
 
 
         [TestMethod]
@@ -139,31 +140,31 @@ namespace CarteGame.Tests
 
             Assert.AreEqual(p.Tirer() ,new Carte(Couleur.TREFLE,Valeur.TROIS));
         }
-        [TestMethod]
-        public void TestPaquetBrasser()
-        {
-            Paquet p = new Paquet();
-            p.Brasser();
-            Assert.AreNotEqual(p.cartes.First(), new Carte(Couleur.TREFLE, Valeur.TROIS));
-        }
-        [TestMethod]
-        public void TestPaquetEchanger()
-        {
-            Paquet p = new Paquet();
-            Carte c1 = p.cartes.First();
+        //[TestMethod]
+        //public void TestPaquetBrasser()
+        //{
+        //    Paquet p = new Paquet();
+        //    p.Brasser();
+        //    Assert.AreNotEqual(p.cartes.First(), new Carte(Couleur.TREFLE, Valeur.TROIS));
+        //}
+        //[TestMethod]
+        //public void TestPaquetEchanger()
+        //{
+        //    Paquet p = new Paquet();
+        //    Carte c1 = p.cartes.First();
             
-            p.Echanger(0, 1);
-            Assert.AreNotEqual(p.cartes.First(),c1 );
-        }
-        [TestMethod]
-        public void TestPaquetAjouter()
-        {
-            Paquet p = new Paquet();
-            Carte c1 = p.cartes.First();
+        //    p.Echanger(0, 1);
+        //    Assert.AreNotEqual(p.cartes.First(),c1 );
+        //}
+        //[TestMethod]
+        //public void TestPaquetAjouter()
+        //{
+        //    Paquet p = new Paquet();
+        //    Carte c1 = p.cartes.First();
 
-            p.Ajouter(c1);
-            Assert.IsTrue(p.cartes.Count == 55);
-        }
+        //    p.Ajouter(c1);
+        //    Assert.IsTrue(p.cartes.Count == 55);
+        //}
 
 
 
