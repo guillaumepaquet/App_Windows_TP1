@@ -118,6 +118,8 @@ namespace InterfaceDeJeu.Presenter
             changeJoueur();
         }
 
+        
+
         private void ResetHand(object sender, EventArgs e)
         {
             mainView.ResetMain();

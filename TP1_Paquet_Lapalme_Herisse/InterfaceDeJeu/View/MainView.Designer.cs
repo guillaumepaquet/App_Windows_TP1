@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainView));
             this.playedCardsControl1 = new InterfaceDeJeu.View.PlayedCardsControl();
             this.otherPlayerControl3 = new InterfaceDeJeu.View.OtherPlayerControl();
             this.otherPlayerControl2 = new InterfaceDeJeu.View.OtherPlayerControl();
@@ -66,6 +67,7 @@
             // 
             // currentPlayerControl1
             // 
+            this.currentPlayerControl1.CartesJouees = ((System.Collections.Generic.List<string>)(resources.GetObject("currentPlayerControl1.CartesJouees")));
             this.currentPlayerControl1.Etat = 0;
             this.currentPlayerControl1.Location = new System.Drawing.Point(45, 401);
             this.currentPlayerControl1.Name = "currentPlayerControl1";

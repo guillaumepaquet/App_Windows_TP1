@@ -24,7 +24,7 @@ namespace InterfaceDeJeu.Model
             }
         }
 
-        //sorte avec de la plus forte a la plus faible avec le compare to du strut carte (pas teste )
+        //sort avec de la plus forte a la plus faible avec le compare to du strut carte (pas teste )
         public void SortMain()
         {
             Sort((carte1, carte2) => carte1.CompareTo(carte2));

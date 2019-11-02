@@ -19,6 +19,7 @@ namespace InterfaceDeJeu.View
             InitializeComponent();
         }
 
+
         public event EventHandler ResetHand
         {
             add { currentPlayerControl1.ResetHand += value; }
