@@ -1,11 +1,11 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using CarteLibrairie;
+using InterfaceDeJeu;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CarteLibrairie.Model;
+using InterfaceDeJeu.Model;
 
 namespace CarteGame.Tests
 {
@@ -13,9 +13,33 @@ namespace CarteGame.Tests
     public class MainTests
     {
         [TestMethod()]
-        public void MainTest()
+        public void TestAddCarte()
         {
-            Assert.Fail();
+            Carte carte = new Carte(Couleur.PIQUE, Valeur.AS);
+            Main main = new Main();
+            main.AddCarte(carte);
+            Assert.AreEqual(main.ElementAt(0), carte); 
+        }
+
+        [TestMethod]
+        public void TestSortMain()
+        {
+            Carte carte1 = new Carte(Couleur.PIQUE, Valeur.QUATRE);
+            Carte carte2 = new Carte(Couleur.PIQUE, Valeur.TROIS);
+            Main main = new Main();
+            main.AddCarte(carte1);
+            main.AddCarte(carte2);
+            main.Sort();
+            Assert.IsTrue(main.ElementAt(0).Valeur < main.ElementAt(1).Valeur);
+        }
+
+        [TestMethod]
+        public void TestMainToString()
+        {
+            Carte carte1 = new Carte(Couleur.PIQUE, Valeur.AS);
+            Main main = new Main();
+            main.AddCarte(carte1);
+            Assert.AreEqual(main.ToString(), $"Voici ta main \n AS-PIQUE \n");
         }
 
         //[TestMethod()]
@@ -132,14 +156,15 @@ namespace CarteGame.Tests
         //    Assert.IsTrue(p.cartes.Count == 54);
         //}
 
-
+       
         [TestMethod]
         public void TestPaquetTirer()
         {
             Paquet p = new Paquet();
-
-            Assert.AreEqual(p.Tirer() ,new Carte(Couleur.TREFLE,Valeur.TROIS));
+            Assert.IsNotNull(p.Tirer());
         }
+
+
         //[TestMethod]
         //public void TestPaquetBrasser()
         //{
@@ -152,7 +177,7 @@ namespace CarteGame.Tests
         //{
         //    Paquet p = new Paquet();
         //    Carte c1 = p.cartes.First();
-            
+
         //    p.Echanger(0, 1);
         //    Assert.AreNotEqual(p.cartes.First(),c1 );
         //}
@@ -165,16 +190,5 @@ namespace CarteGame.Tests
         //    p.Ajouter(c1);
         //    Assert.IsTrue(p.cartes.Count == 55);
         //}
-
-
-
-
-
-
-
-
-
-
-
     }
 }
